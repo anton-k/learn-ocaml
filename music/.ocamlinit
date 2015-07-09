@@ -1,0 +1,24 @@
+#utop_prompt_fancy_light
+
+#use "topfind"
+#thread
+#require "dynlink"
+#camlp4o
+#require "bin_prot.syntax"
+#require "sexplib.syntax"
+#require "variantslib.syntax"
+#require "fieldslib.syntax"
+#require "comparelib.syntax"
+#require "core"
+#require "async"
+#require "core_extended"
+#require "core.top"
+open Core.Std
+
+#directory "_build/src"
+#load "Track.cma"
+#load "Score.cma"
+#load "Main.cma"
+open Track
+open Score
+open Main
